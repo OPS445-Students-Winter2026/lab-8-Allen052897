@@ -1,0 +1,46 @@
+
+PLAY [vmlab] *******************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [vmlab]
+
+TASK [install epel-release] ****************************************************
+ok: [vmlab]
+
+TASK [update apache] ***********************************************************
+ok: [vmlab]
+
+TASK [remove tree package] *****************************************************
+changed: [vmlab]
+
+TASK [set hostname] ************************************************************
+ok: [vmlab]
+
+TASK [create new user] *********************************************************
+ok: [vmlab]
+
+TASK [create ssh directory] ****************************************************
+ok: [vmlab]
+
+TASK [install authorized key for new user] *************************************
+ok: [vmlab]
+
+TASK [allow wheel group passwordless sudo] *************************************
+ok: [vmlab]
+
+TASK [create ops445 base directory] ********************************************
+ok: [vmlab]
+
+TASK [create lab directories] **************************************************
+ok: [vmlab] => (item=/home/aabonifacio/ops445/lab1)
+ok: [vmlab] => (item=/home/aabonifacio/ops445/lab2)
+ok: [vmlab] => (item=/home/aabonifacio/ops445/lab3)
+ok: [vmlab] => (item=/home/aabonifacio/ops445/lab4)
+ok: [vmlab] => (item=/home/aabonifacio/ops445/lab5)
+ok: [vmlab] => (item=/home/aabonifacio/ops445/lab6)
+ok: [vmlab] => (item=/home/aabonifacio/ops445/lab7)
+ok: [vmlab] => (item=/home/aabonifacio/ops445/lab8)
+
+PLAY RECAP *********************************************************************
+vmlab                      : ok=11   changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
